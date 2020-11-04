@@ -68,3 +68,28 @@ library as scipy.special.gamma). Choose appropriate a and b such that the mean o
 seen in class, we know how to find out the posterior distribution given prior distribution and likelihood
 function. There are two approaches to find out the posterior distribution – one is to use all 160 data points
 at one go and the other is to use each data point sequentially.
+
+
+#ASSIGNMEMT-3
+#Problem Statement:
+#In this assignment, you will be implementing Polynomial regression (with degrees varying from 1 2, . ., 10)
+using Gradient Descent and Stochastic Gradient Descent backed up by Lasso and Ridge regularization. But
+before implementing the algorithms, you are expected to pre-process your data which includes shuffling
+the data, standardizing/normalizing the values and creating a random 70-20-10 split to aid in training,
+validation and testing respectively. Vectorize your algorithms as much as possible to efficiently carry out
+the computations. Try to print the error value after every 50 iterations during training for better
+visualization.
+The dataset consists of three features i.e. age, bmi and number of children of an individual. Drop the
+‘number of children’ feature before pre-processing the data. Using the remaining features (age and bmi),
+you are expected to predict the insurance amount for that person by constructing matured polynomial
+features (obtained from the PolynomialFeatures class) and optimizing the weights by using GD/SGD.
+Try to write a clean, modularized and vectorized code which can solve the above problem. Please refrain
+from hardcoding any part of your code, until unless it is absolutely necessary.
+#What needs to be documented in your report:
+#Firstly, give a brief description of your model, algorithms and how you implemented the regularization.
+Secondly, tabulate the minimum training and testing error achieved by your model by using polynomials of
+degree 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 to predict the output. Now add a regularization term and use random
+values uniformly chosen from the range [0, 1] for the regularization parameter. Tabulate the minimum and
+training, validation and testing error you get by incorporating regularization.
+Finally, visualize the surface plots of your predictions (using matplotlib and Axes3D) that you obtained by
+using polynomials of varying degree and comment on how overfitting actually works.
